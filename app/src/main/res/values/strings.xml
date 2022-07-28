@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cart</string>
+    <string name="item">Item</string>
+    <string name="add">Added</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="cart_items">Cart Items</string>
+    <string name="delete_all_items">Delete All Items</string>
+</resources>
