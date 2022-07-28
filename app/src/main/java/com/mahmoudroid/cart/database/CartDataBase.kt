@@ -28,8 +28,7 @@ abstract class CartDataBase : RoomDatabase() {
                             context.applicationContext,
                             CartDataBase::class.java,
                             "cart-database"
-                        )
-                            .build()
+                        ).build()
                     }
                 }
             }

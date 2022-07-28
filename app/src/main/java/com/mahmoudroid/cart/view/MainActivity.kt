@@ -172,9 +172,9 @@ class MainActivity : AppCompatActivity(), CartAdapter.OnAddClickListener {
 
     fun initWorkManager() {
         val workManager = WorkManager.getInstance(this)
-        val sendingLog = PeriodicWorkRequestBuilder<UploadCartWorker>(60, TimeUnit.SECONDS)
+        val sendingLog = PeriodicWorkRequestBuilder<UploadCartWorker>(48, TimeUnit.HOURS)
             .addTag("TAG_SEND_LOG")
-            .setInitialDelay(60, TimeUnit.SECONDS)
+            .setInitialDelay(48, TimeUnit.HOURS)
             .build()
         workManager.enqueueUniquePeriodicWork(
             "upload-cart", ExistingPeriodicWorkPolicy.REPLACE, sendingLog
